@@ -4,6 +4,14 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart[0] == nil  %>
+
+    <div class="alert alert-warning" role="alert">
+     <p> Cart is empty, <%= link_to "Click here", "/" %> to view products </p>
+    </div>
+
+  <% else %> 
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,8 +23,10 @@
         </tr>
       </thead>
       <tbody>
-        <% enhanced_cart.each do |item| %>
-          <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+        
+          <% enhanced_cart.each do |item| %>
+            <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+          
         <% end %>
       </tbody>
       <tfoot>
@@ -48,5 +58,5 @@
       <% end %>
     </div>
   </div>
-
+  <% end %>
 </section>
