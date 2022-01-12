@@ -2,6 +2,24 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Landing Page
+
+Home page with an overview of all available products.
+
+!["Landing page"](https://github.com/sharifhashim/jungle-rails/blob/master/docs/landing.png?raw=true)
+
+## Product Details
+
+Details page for a specific product.
+
+!["Product details"](https://github.com/sharifhashim/jungle-rails/blob/master/docs/detail.png?raw=true)
+
+## Checkout Page
+
+Displays the content of the cart and checkout button.
+
+!["Checkout page"](https://github.com/sharifhashim/jungle-rails/blob/master/docs/checkout.png?raw=true)
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
